@@ -1,0 +1,10 @@
+cc_library(
+	name="observer",
+	hdrs=[
+		"observable.h", 
+		"observable.tpp", 
+		"observer.h", 
+		"observer.tpp",
+	],
+	visibility=["//visibility:public"],
+)
