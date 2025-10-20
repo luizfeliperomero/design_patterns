@@ -1,0 +1,10 @@
+cc_library(
+	name="decorators",
+	hdrs=[
+		"email_notifier_decorator.h",
+		"notifier_decorator.h",
+		"sms_notifier_decorator.h",
+	],
+	deps=["//include/interfaces:interfaces"],
+	visibility=["//visibility:public"],
+)
