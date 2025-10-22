@@ -1,0 +1,11 @@
+cc_binary(
+	name="main",
+	srcs=["main.cc"],
+	deps=[
+		"//include/interfaces:interfaces",
+		"//src/factories:factories",
+		"//src/main_course:main_course",
+		"//src/dessert:dessert",
+	],
+	copts=["-Isrc"],
+)
