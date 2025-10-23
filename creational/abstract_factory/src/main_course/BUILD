@@ -7,6 +7,8 @@ cc_library(
 		"src/american_main_course.h",
 		"src/brazilian_main_course.h",
 		"src/italian_main_course.h",
+		"src/main_course.cc",
 	],
 	visibility=["//visibility:public"],
+	copts=["-Isrc/main_course/include"],
 )

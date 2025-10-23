@@ -1,7 +1,6 @@
-#ifndef SRC_MAIN_COURSE_AMERICAN_MAIN_COURSE_H_
-#define SRC_MAIN_COURSE_AMERICAN_MAIN_COURSE_H_
+#pragma once
 
-#include "include/interfaces/main_course.h"
+#include "main_course.h"
 #include <string>
 
 class AmericanMainCourse : public MainCourse {
@@ -13,5 +12,3 @@ class AmericanMainCourse : public MainCourse {
 			return name_;
 		}
 };
-
-#endif

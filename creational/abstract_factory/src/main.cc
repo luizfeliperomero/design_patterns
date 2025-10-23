@@ -2,9 +2,9 @@
 #include <print>
 #include <array>
 
-#include "main_course.h"
-#include "dessert.h"
-#include "meal_factory.h"
+#include "main_course/include/main_course.h"
+#include "dessert/include/dessert.h"
+#include "factories/include/meal_factory.h"
 
 struct Meal {
 	std::unique_ptr<MainCourse> main_course;
@@ -27,9 +27,9 @@ int main() {
 	std::string separator = "========================";
 
     auto factories = std::to_array<std::unique_ptr<MealFactory>>({
-			std::make_unique<BrazilianMealFactory>(), 
-			std::make_unique<AmericanMealFactory>(), 
-			std::make_unique<ItalianMealFactory>(),
+			MealFactory::CreateAmerican(),
+			MealFactory::CreateBrazilian(),
+			MealFactory::CreateItalian(),
 	});
 
     for (auto& factory_ptr : factories) {

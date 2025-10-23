@@ -1,7 +1,5 @@
-#ifndef SRC_DESSERT_AMERICAN_DESSERT_H_
-#define SRC_DESSERT_AMERICAN_DESSERT_H_
-
-#include "include/interfaces/dessert.h"
+#pragma once
+#include "dessert.h"
 #include <string>
 
 class AmericanDessert : public Dessert {
@@ -11,7 +9,4 @@ class AmericanDessert : public Dessert {
 		std::string GetName() const override {
 			return name_;
 		}
-
 };
-
-#endif

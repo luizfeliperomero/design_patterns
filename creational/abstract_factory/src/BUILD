@@ -2,9 +2,9 @@ cc_binary(
 	name="main",
 	srcs=["main.cc"],
 	deps=[
-		"//factories",
-		"//main_course",
-		"//dessert",
+		"//src/factories",
+		"//src/main_course",
+		"//src/dessert",
 	],
 	copts=["-Isrc"],
 )

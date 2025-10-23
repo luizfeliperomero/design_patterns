@@ -7,6 +7,8 @@ cc_library(
 		"src/american_dessert.h",
 		"src/brazilian_dessert.h",
 		"src/italian_dessert.h",
+		"src/dessert.cc",
 	],
 	visibility=["//visibility:public"],
+	copts=["-Isrc/dessert/include"]
 )
