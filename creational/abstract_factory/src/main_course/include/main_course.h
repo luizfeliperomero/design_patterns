@@ -9,4 +9,8 @@ class MainCourse {
 		virtual std::string GetName() const = 0;
 };
 
+class AmericanMainCourse;
+class BrazilianMainCourse;
+class ItalianMainCourse;
+
 #endif

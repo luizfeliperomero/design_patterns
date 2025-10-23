@@ -1,10 +1,16 @@
 cc_library(
 	name="factories",
-	hdrs=["american_meal_factory.h", "brazilian_meal_factory.h", "italian_meal_factory.h"],
+	hdrs = [
+		"include/meal_factory.h",
+	],
+	srcs = [
+		"src/american_meal_factory.h",
+		"src/brazilian_meal_factory.h",
+		"src/italian_meal_factory.h",
+	],
 	deps=[
-		"//include/interfaces:interfaces",
-		"//src/main_course:main_course",
-		"//src/dessert:dessert",
+		"//main_course",
+		"//dessert",
 	],
 	visibility=["//visibility:public"],
 )

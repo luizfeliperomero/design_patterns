@@ -12,4 +12,8 @@ class MealFactory {
 		virtual std::unique_ptr<Dessert> GetDessert() const = 0;
 };
 
+class AmericanMealFactory;
+class BrazilianMealFactory;
+class ItalianMealFactory;
+
 #endif

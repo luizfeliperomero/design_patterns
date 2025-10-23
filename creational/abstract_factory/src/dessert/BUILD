@@ -1,6 +1,12 @@
 cc_library(
 	name="dessert",
-	hdrs=["american_dessert.h", "brazilian_dessert.h", "italian_dessert.h"],
-	deps=["//include/interfaces:interfaces"],
+	hdrs = [
+		"include/dessert.h",
+	],
+	srcs= [
+		"src/american_dessert.h",
+		"src/brazilian_dessert.h",
+		"src/italian_dessert.h",
+	],
 	visibility=["//visibility:public"],
 )

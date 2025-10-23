@@ -1,19 +1,10 @@
-#include "src/dessert/brazilian_dessert.h"
-#include "src/main_course/brazilian_main_course.h"
-#include "src/factories/brazilian_meal_factory.h"
-#include "src/dessert/american_dessert.h"
-#include "src/main_course/american_main_course.h"
-#include "src/factories/american_meal_factory.h"
-#include "src/dessert/italian_dessert.h"
-#include "src/main_course/italian_main_course.h"
-#include "src/factories/italian_meal_factory.h"
-#include "include/interfaces/main_course.h"
-#include "include/interfaces/dessert.h"
-#include "include/interfaces/meal_factory.h"
 #include <memory>
 #include <print>
 #include <array>
 
+#include "main_course.h"
+#include "dessert.h"
+#include "meal_factory.h"
 
 struct Meal {
 	std::unique_ptr<MainCourse> main_course;

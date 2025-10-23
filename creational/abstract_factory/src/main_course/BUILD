@@ -1,6 +1,12 @@
 cc_library(
 	name="main_course",
-	hdrs=["american_main_course.h", "brazilian_main_course.h", "italian_main_course.h"],
-	deps=["//include/interfaces:interfaces"],
+	hdrs = [
+		"include/main_course.h",
+	],
+	srcs = [
+		"src/american_main_course.h",
+		"src/brazilian_main_course.h",
+		"src/italian_main_course.h",
+	],
 	visibility=["//visibility:public"],
 )
