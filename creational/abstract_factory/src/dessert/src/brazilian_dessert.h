@@ -1,7 +1,6 @@
-#ifndef SRC_DESSERT_BRAZILIAN_DESSERT_H_
-#define SRC_DESSERT_BRAZILIAN_DESSERT_H_
+#pragma once
 
-#include "include/interfaces/dessert.h"
+#include "dessert.h"
 #include <string>
 
 class BrazilianDessert : public Dessert {
@@ -13,5 +12,3 @@ class BrazilianDessert : public Dessert {
 		}
 
 };
-
-#endif
