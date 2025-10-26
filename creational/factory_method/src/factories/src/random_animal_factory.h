@@ -1,10 +1,10 @@
 #ifndef SRC_FACTORIES_RANDOM_ANIMAL_FACTORY_H_
 #define SRC_FACTORIES_RANDOM_ANIMAL_FACTORY_H_
 
-#include "include/interfaces/animal_factory.h"
-#include "include/interfaces/animal.h"
-#include "src/cat/cat.h"
-#include "src/dog/dog.h"
+#include "src/factories/include/animal_factory.h"
+#include "src/animal/include/animal.h"
+#include "src/animal/src/cat.h"
+#include "src/animal/src/dog.h"
 #include <cstdlib>
 #include <memory>
 
@@ -17,5 +17,6 @@ class RandomAnimalFactory : public AnimalFactory {
 			return std::make_unique<Cat>();
 		}
 };
+
 
 #endif

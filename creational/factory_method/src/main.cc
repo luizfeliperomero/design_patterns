@@ -1,10 +1,9 @@
-#include "include/interfaces/animal.h"
-#include "src/factories/random_animal_factory.h"
+#include "src/factories/include/animal_factory.h"
 
 int main() {
-	RandomAnimalFactory raf;
+	auto raf = AnimalFactory::GetRandomAnimalFactory();
 	for(int i = 0; i < 20; i++) {
-		auto animal = raf.CreateAnimal();
+		auto animal = raf->CreateAnimal();
 		animal->MakeNoise();
 	}
 }
