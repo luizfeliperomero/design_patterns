@@ -1,9 +1,0 @@
-cc_library(
-	name="fly_strategy",
-	hdrs=[
-		"elegant_fly_strategy.h",
-		"fly_strategy.h",
-		"simple_fly_strategy.h",
-	],
-	visibility=["//visibility:public"],
-)

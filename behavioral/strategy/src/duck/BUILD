@@ -1,6 +1,7 @@
 cc_library(
 	name="duck",
-	hdrs=["duck.h"],
-	deps=["//src/strategy/fly:fly_strategy"],
+	hdrs=["include/duck.h"],
+	srcs=["src/duck.cc"],
+	deps=["//src/fly_strategy"],
 	visibility=["//visibility:public"],
 )

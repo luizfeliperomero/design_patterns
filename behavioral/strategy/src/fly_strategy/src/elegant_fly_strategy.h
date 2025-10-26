@@ -1,8 +1,8 @@
-#ifndef DUCK_ELEGANT_FLY_STRATEGY_H_
-#define DUCK_ELEGANT_FLY_STRATEGY_H_
+#pragma once
 
-#include "fly_strategy.h"
 #include <print>
+
+#include "src/fly_strategy/include/fly_strategy.h"
 
 class ElegantFlyStrategy : public FlyStrategy {
 	public:
@@ -10,5 +10,3 @@ class ElegantFlyStrategy : public FlyStrategy {
 			std::println("Elegantly flying");
 		}
 };
-
-#endif
