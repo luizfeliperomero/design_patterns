@@ -1,0 +1,12 @@
+cc_library(
+	name="fly_strategy",
+	hdrs=[
+		"include/fly_strategy.h",
+	],
+	srcs=[
+		"src/fly_strategy.cc",
+		"src/elegant_fly_strategy.h",
+		"src/simple_fly_strategy.h",
+	],
+	visibility=["//visibility:public"],
+)
