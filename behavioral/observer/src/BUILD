@@ -1,6 +1,6 @@
 cc_binary(
 	name="main",
 	srcs=["main.cc"],
-	deps=["//src/charger:charger", "//src/gui:gui"],
+	deps=["//src/charger", "//src/gui"],
 	copts=["-Isrc"],
 )

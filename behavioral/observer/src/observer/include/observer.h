@@ -1,5 +1,4 @@
-#ifndef INTERFACES_OBSERVER_H_
-#define INTERFACES_OBSERVER_H_
+#pragma once
 
 template <typename T>
 class Observable;
@@ -9,10 +8,8 @@ class Observer {
 	protected:
 		Observable<T>& observable_;
 	public:
-		explicit Observer(Observable<T>& observable);
+		explicit Observer(Observable<T>& observable) : observable_(observable) {
+			observable_.AddObserver(*this);
+		}
 		virtual void Update() = 0;
 };
-
-#include "observer.tpp"
-
-#endif

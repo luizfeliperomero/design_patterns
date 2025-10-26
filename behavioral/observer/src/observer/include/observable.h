@@ -1,5 +1,4 @@
-#ifndef INTERFACES_OBSERVABLE_H_
-#define INTERFACES_OBSERVABLE_H_
+#pragma once
 
 #include <vector>
 #include <algorithm>
@@ -10,8 +9,14 @@ template <typename T>
 class Observable {
 	public:
 		std::vector<std::reference_wrapper<Observer<T>>> observers_;
-		virtual void Notify();
-		virtual void AddObserver(Observer<T>& observer);
+		void Notify() {
+			for(auto& observer : observers_) {
+				observer.get().Update();
+			}
+		}
+		void AddObserver(Observer<T>& observer) {
+			observers_.push_back(observer);
+		}
 		virtual T GetData() const = 0;
 		/*void RemoveObserver(Observer* observer) {
 			auto it = std::remove_if(
@@ -20,7 +25,3 @@ class Observable {
 			observers_.erase(it, observers_.end());
 		}*/
 };
-
-#include "observable.tpp"
-
-#endif
