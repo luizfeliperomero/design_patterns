@@ -1,9 +1,9 @@
-#ifndef SRC_DEFAULT_NOTIFIER_DEFAULT_NOTIFIER_H_
-#define SRC_DEFAULT_NOTIFIER_DEFAULT_NOTIFIER_H_
+#pragma once
 
-#include "include/interfaces/notifier.h"
 #include <string>
 #include <print>
+
+#include "src/notifier/include/notifier.h"
 
 class DefaultNotifier : public Notifier {
 	public:
@@ -11,5 +11,3 @@ class DefaultNotifier : public Notifier {
 			std::println("{}", message);
 		}
 };
-
-#endif
