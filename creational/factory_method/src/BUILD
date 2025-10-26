@@ -2,10 +2,8 @@ cc_binary(
 	name="main",
 	srcs=["main.cc"],
 	deps=[
-		"//include/interfaces:interfaces", 
-		"//src/cat:cat", 
-		"//src/dog:dog",
-		"//src/factories:random_animal_factory"
+		"//src/animal",
+		"//src/factories",
 	],
 	copts=["-Isrc"],
 )

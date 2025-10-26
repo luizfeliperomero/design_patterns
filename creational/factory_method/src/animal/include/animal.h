@@ -1,5 +1,4 @@
-#ifndef INCLUDE_INTERFACES_ANIMAL_H_
-#define INCLUDE_INTERFACES_ANIMAL_H_
+#pragma once
 
 class Animal {
 	protected:
@@ -8,5 +7,3 @@ class Animal {
 		virtual ~Animal() = default;
 		virtual void MakeNoise() = 0;
 };
-
-#endif

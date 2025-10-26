@@ -1,7 +1,6 @@
-#ifndef SRC_DOG_DOG_H_
-#define SRC_DOG_DOG_H_
+#pragma once
 
-#include "include/interfaces/animal.h"
+#include "src/animal/include/animal.h"
 #include <print>
 
 class Dog : public Animal {
@@ -10,5 +9,3 @@ class Dog : public Animal {
 			std::println("Barking");
 		}
 };
-
-#endif
