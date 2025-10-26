@@ -1,6 +1,7 @@
 cc_library(
 	name="gui",
-	hdrs=["gui.h"],
-	deps=["//interfaces:observer"],
+	hdrs=["include/gui.h"],
+	srcs=["src/gui.cc"],
+	deps=["//src/observer"],
 	visibility=["//visibility:public"],
 )

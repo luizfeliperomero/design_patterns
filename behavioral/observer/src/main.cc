@@ -1,5 +1,5 @@
-#include "charger/charger.h"
-#include "gui/gui.h"
+#include "src/charger/include/charger.h"
+#include "src/gui/include/gui.h"
 #include <thread>
 #include <chrono>
 #include <random>

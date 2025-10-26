@@ -1,6 +1,7 @@
 cc_library(
 	name="charger",
-	hdrs=["charger.h"],
-	deps=["//interfaces:observer"],
+	hdrs=["include/charger.h"],
+	srcs=["src/charger.cc"],
+	deps=["//src/observer"],
 	visibility=["//visibility:public"],
 )
