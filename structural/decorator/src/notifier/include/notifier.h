@@ -1,12 +1,12 @@
-#ifndef INCLUDE_INTERFACES_NOTIFIER_H_
-#define INCLUDE_INTERFACES_NOTIFIER_H_
+#pragma once
 
 #include <string>
+#include <memory>
+
 
 class Notifier {
 	public:
 		virtual void Notify(std::string message) = 0;
 		virtual ~Notifier() = default;
+		static std::unique_ptr<Notifier> GetDefault();
 };
-
-#endif
