@@ -1,0 +1,12 @@
+cc_library(
+	name="command",
+	hdrs=[
+	"include/command.h",
+	"include/turn_on_light_command.h",
+	],
+	srcs=[
+	"src/turn_on_light_command.cc",
+	],
+	deps=["//src/light_bulb"],
+	visibility=["//visibility:public"]
+)
