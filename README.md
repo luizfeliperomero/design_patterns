@@ -10,6 +10,10 @@ The observable maintains a list of observers and calls each observer’s `Update
 So, when it wants to notify the observers that its state has changed, it calls `Notify()`.
 
 ![Observer Pattern UML class diagram](./docs/uml/observer.png)
+### Command
+Allows an invoker to execute a command independently of the object that defines how the command is carried out.
+
+![Decorator Pattern UML class diagram](./docs/uml/command.png)
 ## Structural
 ### Decorator
 Wraps an interface that it implements itself, using dependency injection to create a chain (or stack) of function calls,
